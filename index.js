@@ -71,6 +71,10 @@ app.get('/', (req, res) => {
     res.send("Hello from server")
 });
 
+app.get('/hello', (req, res) => {
+    res.send("Hello from server side")
+});
+
 app.listen(port, () => {
     console.log("Listening to port", port)
 })
